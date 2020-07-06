@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nёrds - Магазин</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="main-header">
+  <div class="container">
+<nav class="main-nav">
+<a href="index.html">
+<img src="img/logo.png" alt="Логотип Nёrds" class="main-logo">
+</a>
+<ul class="site-navigation">
+  <li class="site-navigation__item">
+<a href="#studio" class="site-navigation__link">
+    Студия
+</a>
+  </li>
+  <li class="site-navigation__item">
+<a href="#clients" class="site-navigation__link">
+    Клиенты
+</a>
+  </li>
+  <li class="site-navigation__item site-navigation__item-current">
+<a href="shop.html" class="site-navigation__link">
+    Магазин
+</a>
+  </li>
+  <li class="site-navigation__item">
+<a href="#contacts" class="site-navigation__link">
+    Контакты
+</a>
+  </li>
+</ul>
+<ul class="user-navigation">
+  <li class="user-navigation__item">
+<a href="#" class="user-navigation__link">
+    Корзина
+</a>
+  </li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main>
+
+<h1 class="page__title">Магазин готовых шаблонов</h1>
+
+<div class="page__wrapper container">
+
+<section class="filters">
+  <h2 class="visually-hidden">Фильтр товаров</h2>
+<form action="" method ="post">
+<fieldset class="filters__fieldset">
+<legend class="filters__legend">Стоимость:</legend>
+
+</fieldset>
+<fieldset class="filters__fieldset">
+<legend class="filters__legend">Сетка:</legend>
+  <label for="" class="filters__label">
+    <input type="radio" class="radio__input" name="grid" checked>
+Адаптивная
+  </label>
+  <label for="" class="rfilters__label">
+    <input type="radio" class="radio__input" name="grid" checked>
+Фиксированная
+  </label>
+  <label for="" class="filters__label">
+    <input type="radio" class="radio__input" name="grid" checked>
+Резиновая
+  </label>
+</fieldset>
+<fieldset class="filters__fieldset">
+<legend class="filters__legend">Особенности:</legend>
+<label for="" class="filters__label">
+<input type="checkbox" checked>
+  Слайдер
+</label>
+<label for="" class="filters__label">
+<input type="checkbox" >
+  Блок преимуществ
+</label>
+<label for="" class="filters__label">
+<input type="checkbox" checked>
+  Новости
+</label>
+<label for="" class="filters__label">
+<input type="checkbox" >
+  Галлерея
+</label>
+<label for="" class="filters__label">
+<input type="checkbox" >
+  Корзина
+</label>
+</fieldset>
+<button class="btn filters__btn" type="submit">Показать</button>
+</form>
+</section>
+
+<section class="catalog">
+  <h2 class="visually-hidden">Готовые сайты</h2>
+<ul class="catalog__list">
+<li class="catalog__item">
+  <a href="">
+  <img src="img/catalog1.jpeg" alt="Промо-сайт города Седона, Аризона" class="catalog__img" width="360" height="576">
+</a>
+<div class="catalog__popup">
+  <a href="">
+<h3 class="catalog__subtitle">Sedona</h3>
+</a>
+<p class="catalog__text">Информационный сайт
+для туристов</p>
+<a href="" class="btn catalog__btn">9 900 руб.</a>
+</div>
+</li>
+<li class="catalog__item">
+  <a href="">
+  <img src="img/catalog2.jpeg" alt="Мобильное приложениеPink" class="catalog__img" width="360" height="576">
+</a>
+<div class="catalog__popup">
+  <a href="">
+<h3 class="catalog__subtitle">Pink app</h3>
+</a>
+<p class="catalog__text">Продуктовый лендинг приложения для iOS и Android</p>
+<a href="" class="btn catalog__btn">9 900 руб.</a>
+</div>
+</li>
+<li class="catalog__item">
+  <a href="">
+  <img src="img/catalog3.jpeg" alt="Барбершоп Borodinski" class="catalog__img" width="360" height="576">
+</a>
+<div class="catalog__popup">
+  <a href="">
+<h3 class="catalog__subtitle">Barbershop</h3>
+</a>
+<p class="catalog__text">Сайт салона красоты. Для мужчин, да.</p>
+<a href="" class="btn catalog__btn">9 900 руб.</a>
+</div>
+</li>
+<li class="catalog__item">
+  <a href="">
+  <img src="img/catalog4.jpeg" alt="Магазин вязаных корзинок Mishka" class="catalog__img" width="360" height="576">
+</a>
+<div class="catalog__popup">
+  <a href="">
+<h3 class="catalog__subtitle">Mishka</h3>
+</a>
+<p class="catalog__text">Интернет-магазин вязаных игрушек.</p>
+<a href="" class="btn catalog__btn">9 900 руб.</a>
+</div>
+</li>
+<li class="catalog__item">
+  <a href="">
+  <img src="img/catalog5.jpeg" alt="Программа обучения А+" class="catalog__img" width="360" height="576">
+</a>
+<div class="catalog__popup">
+  <a href="">
+<h3 class="catalog__subtitle">A plus</h3>
+</a>
+<p class="catalog__text">Лендинг курсов повышения квалификации</p>
+<a href="" class="btn catalog__btn">9 900 руб.</a>
+</div>
+</li>
+<li class="catalog__item">
+  <a href="">
+  <img src="img/catalog6.jpeg" alt="Крафтовый квас Кваст" class="catalog__img" width="360" height="576">
+</a>
+<div class="catalog__popup">
+  <a href="">
+<h3 class="catalog__subtitle">Кваст</h3>
+</a>
+<p class="catalog__text">Промо-сайт производителя крафтового кваса</p>
+<a href="" class="btn catalog__btn">9 900 руб.</a>
+</div>
+</li>
+</ul>
+
+<div class="paginator">
+<a href="#" class="paginator__link paginator__link-current">1</a>
+<a href="#2" class="paginator__link">2</a>
+<a href="#3" class="paginator__link">3</a>
+<a href="#next" class="paginator__link  paginator__link-next">Следующая</a>
+</div>
+</section>
+
+</div>
+
+<section class="location" id="contacts">
+  <h2 class="visually-hidden">Наши контакты</h2>
+<div class="contacts container">
+  <div class="location__address">
+  <p class="contacts__subtitle">Nёrds Design Studio</p>
+  <p class="contacts__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+  <p class="contacts__text">тел. <a class="contacts__link" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+  <a href="#" class="btn contacts__btn">Напишите нам</a>
+</div>
+  </div>
+
+  <iframe class="location__map" src="https://yandex.ru/map-widget/v1/-/CCQhJWC9CC" width="100%" height="418" frameborder="1" allowfullscreen="true"></iframe>
+</section>
+</main>
+
+<footer class="main-footer container">
+  <div class="content__wrap">
+  <ul class="socials__list">
+    <li class="socials__item">
+      <a href="#" class="vk-icon socials__link" aria-lable="Вконтакте"></a>
+    </li>
+    <li class="socials__item">
+      <a href="#" class="fb-icon socials__link" aria-lable="Facebook"></a>
+    </li>
+    <li class="socials__item">
+      <a href="#" class="ig-icon  socials__link" aria-lable="Instagram"></a>
+    </li>
+  </ul>
+  <div class="footer-discount">
+  <p class="footer__subtitle">Давайте дружить, это выгодно!</p>
+  <p>Скидка 10% для друзей из социальных сетей.</p>
+  </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
