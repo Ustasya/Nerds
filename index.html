@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nёrds</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -55,9 +56,9 @@
   <section class="slider">
     <div  class="container">
 <h2 class="visually-hidden">Преимущества</h2>
-<input type="radio" class="visually-hidden slider1" id="slider1" checked>
-<input type="radio" class="visually-hidden slider2" id="slider2">
-<input type="radio" class="visually-hidden slider3" id="slider3">
+<input type="radio" class="visually-hidden" id="slider1" name="toggle" checked>
+<input type="radio" class="visually-hidden" id="slider2" name="toggle">
+<input type="radio" class="visually-hidden" id="slider3" name="toggle">
 
 <div class="slider__controls">
 <label for="slider1" class="controls__slider controls__slider-1">1</label>
@@ -67,23 +68,25 @@
 <ul class="slider__list">
   <li class="slider__item">
     <div class="slider__text">
-    <p class="text-big">Долго, дорого, скрупулезно.</p>
-<p>Математически выверенный дизайн
-для вашего сайта или мобильного приложения.</p>
+    <p class="text-big">Долго, дорого, <br>скрупулезно.</p>
+<p>Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
 <a href="#" class="btn slider__btn">Узнать больше</a>
 </div>
   </li>
   <li class="slider__item">
-    <p class="text-big">Любим математику как никто другой</p>
-<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+    <div class="slider__text">
+    <p class="text-big">Любим математику <br>как никто другой</p>
+<p>Никакого креатива, только математические формулы <br>для расчета идеальных пропорций.</p>
 <a href="" class="btn slider__btn">Узнать больше</a>
+</div>
   </li>
   <li class="slider__item">
-    <p class="text-big">Только ночь,
+    <div class="slider__text">
+    <p class="text-big">Только ночь,<br>
 только хардкор</p>
-<p>Работать днем, как все? Мы против этого.
-Ближе к полуночи работа только начинается.</p>
+<p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
 <a href="" class="btn slider__btn">Узнать больше</a>
+</div>
   </li>
 </ul>
 </div>
@@ -188,7 +191,7 @@
 </div>
   </div>
 
-  <iframe class="location__map" src="https://yandex.ru/map-widget/v1/-/CCQhJWC9CC" width="100%" height="418" frameborder="1" allowfullscreen="true"></iframe>
+  <iframe class="location__map" src="https://yandex.ru/map-widget/v1/-/CCQhJWC9CC" height="418" frameborder="1" allowfullscreen="true"></iframe>
 </section>
 </main>
 
@@ -196,13 +199,13 @@
   <div class="content__wrap">
   <ul class="socials__list">
     <li class="socials__item">
-      <a href="#" class="vk-icon socials__link" aria-lable="Вконтакте"></a>
+      <a href="#" class="vk-icon socials__link">Вконтакте</a>
     </li>
     <li class="socials__item">
-      <a href="#" class="fb-icon socials__link" aria-lable="Facebook"></a>
+      <a href="#" class="fb-icon socials__link">Facebook</a>
     </li>
     <li class="socials__item">
-      <a href="#" class="ig-icon  socials__link" aria-lable="Instagram"></a>
+      <a href="#" class="ig-icon  socials__link">Instagram</a>
     </li>
   </ul>
   <div class="footer-discount">
@@ -212,6 +215,30 @@
   </div>
 </footer>
 
+<section class="modal">
+		<h2 class="modal__title">Напишите нам</h2>
+		<form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+			<div class="modal__wrap">
+				<p>
+					<label for="name">Ваше имя:</label>
+					<input  class="modal__text" id="name" type="text" name="name" placeholder="Имя Фамилия">
+				</p>
+				<p>
+					<label for="email">Ваш e-mail:</label>
+					<input class="modal__text" id="email" type="email" name="email"
+					placeholder="email@example.com">
+				</p>
+			</div>
+			<p>
+				<label for="modal__textarea">Текст письма:</label>
+				<textarea class="modal__textarea" id="modal__textarea" name="modal__textarea" placeholder="В свободной форме" rows="5"></textarea>
+			</p>
+			<button type="submit" class="btn modal__btn">Отправить</button>
+		</form>
+		<button class="modal__close" type="button">Закрыть</button>
+	</section>
 
+
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nёrds - Магазин</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -26,8 +27,8 @@
     Клиенты
 </a>
   </li>
-  <li class="site-navigation__item site-navigation__item-current">
-<a href="shop.html" class="site-navigation__link">
+  <li class="site-navigation__item">
+<a href="shop.html" class="site-navigation__link site-navigation__link-current">
     Магазин
 </a>
   </li>
@@ -56,54 +57,107 @@
 
 <section class="filters">
   <h2 class="visually-hidden">Фильтр товаров</h2>
-<form action="" method ="post">
+<form action="https://echo.htmlacademy.ru" method ="post">
 <fieldset class="filters__fieldset">
 <legend class="filters__legend">Стоимость:</legend>
-
+<div class="filters__price">
+  <div class="filters__wrap">
+      <div class="filters__scale">
+            <div class="filters__scale-green"></div>
+  </div>
+    <div class="filters__toggle toggle-min"></div>
+    <div class="filters__toggle toggle-max"></div>
+</div>
+  <div class="filters__pricerange">
+    <label class="price-min"> от
+      <input class="price-text" type="text" value="0">
+    </label>
+    <label class="price-max"> до
+      <input class="price-text" type="text" value="15000">
+    </label>
+  </div>
+</div>
 </fieldset>
 <fieldset class="filters__fieldset">
 <legend class="filters__legend">Сетка:</legend>
-  <label for="" class="filters__label">
-    <input type="radio" class="radio__input" name="grid" checked>
+<p class="filters__item">
+  <label class="filters__label">
+    <input type="radio" class="filters__radio-hidden visually-hidden" name="grid" checked>
+<span class="filters__radio"></span>
 Адаптивная
   </label>
-  <label for="" class="rfilters__label">
-    <input type="radio" class="radio__input" name="grid" checked>
+  </p>
+  <p class="filters__item">
+  <label class="filters__label">
+    <input type="radio" class="filters__radio-hidden visually-hidden" name="grid">
+<span class="filters__radio"></span>
 Фиксированная
   </label>
-  <label for="" class="filters__label">
-    <input type="radio" class="radio__input" name="grid" checked>
+  </p>
+  <p class="filters__item">
+  <label class="filters__label">
+    <input type="radio" class="filters__radio-hidden visually-hidden" name="grid">
+    <span class="filters__radio"></span>
 Резиновая
   </label>
+</p>
 </fieldset>
 <fieldset class="filters__fieldset">
 <legend class="filters__legend">Особенности:</legend>
-<label for="" class="filters__label">
-<input type="checkbox" checked>
+<p class="filters__item">
+<label class="filters__label">
+<input class="filters__checkbox-hidden visually-hidden" type="checkbox" name="features" checked>
+<span class="filters__checkbox"></span>
   Слайдер
 </label>
-<label for="" class="filters__label">
-<input type="checkbox" >
+</p>
+<p class="filters__item">
+<label class="filters__label">
+<input class="filters__checkbox-hidden visually-hidden" type="checkbox" name="features">
+<span class="filters__checkbox"></span>
   Блок преимуществ
 </label>
-<label for="" class="filters__label">
-<input type="checkbox" checked>
+</p>
+<p class="filters__item">
+<label class="filters__label">
+<input class="filters__checkbox-hidden visually-hidden" type="checkbox" name="features" checked>
+<span class="filters__checkbox"></span>
   Новости
 </label>
-<label for="" class="filters__label">
-<input type="checkbox" >
+</p>
+<p class="filters__item">
+<label class="filters__label">
+<input class="filters__checkbox-hidden visually-hidden" type="checkbox" name="features">
+<span class="filters__checkbox"></span>
   Галлерея
 </label>
-<label for="" class="filters__label">
-<input type="checkbox" >
+</p>
+<p class="filters__item">
+<label class="filters__label">
+<input class="filters__checkbox-hidden visually-hidden" type="checkbox" name="features">
+<span class="filters__checkbox"></span>
   Корзина
 </label>
+</p>
 </fieldset>
 <button class="btn filters__btn" type="submit">Показать</button>
 </form>
 </section>
 
 <section class="catalog">
+  <div class="catalog__sorting">
+<h2 class="sorting__title">Сортировка:</h2>
+<ul class="sorting__list">
+  <li class="sorting__item">
+    <a class="sorting__link sorting__link-active">По цене</a></li>
+  <li class="sorting__item"><a class="sorting__link">По типу</a></li>
+  <li class="sorting__item"><a class="sorting__link">По названию</a></li>
+</ul>
+  <p class="sorting__updown">
+    <a class="sorting__up">По возрастанию</a>
+    <a class="sorting__down">По убыванию</a>
+  </p>
+  </div>
   <h2 class="visually-hidden">Готовые сайты</h2>
 <ul class="catalog__list">
 <li class="catalog__item">
@@ -202,7 +256,7 @@
 </div>
   </div>
 
-  <iframe class="location__map" src="https://yandex.ru/map-widget/v1/-/CCQhJWC9CC" width="100%" height="418" frameborder="1" allowfullscreen="true"></iframe>
+  <iframe class="location__map" src="https://yandex.ru/map-widget/v1/-/CCQhJWC9CC" height="418" frameborder="1" allowfullscreen="true"></iframe>
 </section>
 </main>
 
@@ -210,13 +264,13 @@
   <div class="content__wrap">
   <ul class="socials__list">
     <li class="socials__item">
-      <a href="#" class="vk-icon socials__link" aria-lable="Вконтакте"></a>
+      <a href="#" class="vk-icon socials__link">Вконтакте</a>
     </li>
     <li class="socials__item">
-      <a href="#" class="fb-icon socials__link" aria-lable="Facebook"></a>
+      <a href="#" class="fb-icon socials__link">Facebook</a>
     </li>
     <li class="socials__item">
-      <a href="#" class="ig-icon  socials__link" aria-lable="Instagram"></a>
+      <a href="#" class="ig-icon  socials__link">Instagram</a>
     </li>
   </ul>
   <div class="footer-discount">
