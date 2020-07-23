@@ -12,3 +12,5 @@
 - [X] Используемые фреймворки: нет.    
 
 - [X] Кроссбраузерность: IE11+, Edge, Chrome, Firefox, Opera, Safari.    
+
+Посмотреть сайт можно по [ссылке](https://ustasya.github.io/Nerds/ "Проект Nerds")
